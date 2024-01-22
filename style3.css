@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+   text-align: center;
+   margin: 0 auto;
+   width: 1200px;
+   padding: 20px;
+   border: 2px solid #070707;
+}
+
+.header {
+   text-align: center;
+   font-size: 48px;
+   margin-bottom: 32px;
+}
+
+.vacancy-table {
+   width: 100%;
+   border-collapse: collapse;
+}
+
+
+.vacancy-table td {
+   padding: 20px;
+   border: 2px solid #080707;
+}
