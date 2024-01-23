@@ -3,16 +3,20 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
 header {
     background-color: white;
     color: red;
     padding: 1em;
-    text-align: left; /* Set text alignment to the left */
+    text-align: left;
     display: flex;
-    align-items: center; /* Center items vertically in the header */
+    align-items: center;
     justify-content: space-between;
+}
+.smaller-text{
+    font-size: 10px;
 }
 .logo-container {
     display: flex;
@@ -20,18 +24,13 @@ header {
 }
 
 header img {
-    margin-right: 20px; /* Adjusted the margin between the logo and the restaurant name */
+    margin-right: 20px;
 }
 
-h1 {
-    margin: 0; /* Remove the default margin for the h1 element */
+h1, p {
+    margin: 0;
     margin-left: 10px;
-}
-h1,
-p {
-    margin: 0; /* Remove default margin for h1 and p elements */
-    margin-left: 10px; /* Add a margin to separate the logo and the restaurant name */
-  
+
 }
 
 nav {
@@ -45,22 +44,47 @@ nav a {
     padding: 1em;
     margin: 0 1em;
     font-weight: bold;
+    
+}
+h2{
+    color: red;
+    font-size: 40px;
 }
 
-section {
+#home {
     padding: 2em;
+    text-align: center;
 }
 
-
-
-.footer {
+.image-container {
     display: flex;
     justify-content: space-around;
-    
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 25%;
+    height: auto;
+    margin-right: 10px; /* Added margin for spacing */
+}
+
+.text-between {
+    text-align: center;
+    margin: 20px 0;
+}
+h3{
+    color: red;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     background-size: cover;
     background-position: center;
     color: white;
-    position: relative; /* Needed for absolute positioning of overlay */
+    position: relative;
+    margin-top: 20px;
+    background-image: url(image/footer\ image.jpg);
 }
 
 .footer::before {
@@ -70,17 +94,17 @@ section {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+   
 }
 
 .footer-col {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 5px;
     width: 25%;
-    float: left;
     box-sizing: border-box;
     padding: 10px;
     color: white;
+    margin-top: 20px;
 }
 
 .contact-info {
@@ -90,23 +114,14 @@ section {
 .contact-item {
     display: flex;
     align-items: center;
-    margin-bottom: 10px; /* Add spacing between each contact item */
+    margin-bottom: 10px;
 }
 
 .contact-item img {
-    width: 20px; /* Adjust the width of the logos as needed */
+    width: 20px;
     height: 20px;
-    margin-right: 5px; /* Add spacing between the logo and text */
+    margin-right: 5px;
 }
-
-
-
-
-.contact {
-    text-align: center;
-    margin-top: 20px;
-}
-/* Add this to your existing CSS */
 
 .footer-col.social-icons {
     text-align: center;
@@ -122,74 +137,6 @@ section {
 }
 
 .social-icons-container img {
-    width: 30px; /* Adjust the size of the icons as needed */
+    width: 30px;
     height: 30px;
-}
-#home {
-    padding: 2em;
-    text-align: center;
-}
-
-.image-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px; /* Adjust the margin as needed */
-}
-
-.image-container img {
-    width: 30%; /* Adjust the width of the images as needed */
-    height: auto;
-}
-section {
-    padding: 2em;
-}
-
-/* Add this to your existing CSS */
-
-/* Add this to your existing CSS */
-
-#home {
-    padding: 2em;
-    text-align: center;
-}
-
-.content-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px; /* Adjust the margin as needed */
-}
-
-#slideshow {
-    max-width: 60%; /* Adjust the max-width of the slideshow */
-    margin-top: 100px;
-}
-
-.slide img {
-    width: 100%; /* Make the images within the slideshow take 100% of the container width */
-    height: auto; /* Maintain the aspect ratio of the images */
-}
-
-.single-photo img {
-    width: 30%; /* Adjust the width of the single photo as needed */
-    height: auto;
-}
-.text-between{
-    margin-top: 60px;
-}
-/* Add this to your existing CSS */
-
-@media screen and (max-width: 600px) {
-    h1 {
-        font-size: 1.5em; /* Adjust the font size for smaller screens */
-    }
-
-    p {
-        font-size: 0.8em; /* Adjust the font size for smaller screens */
-    }
-
-    .image-container img {
-        width: 100%; /* Adjust the width of the images for smaller screens */
-    }
-
-    /* Add more styles as needed for smaller screens */
 }
