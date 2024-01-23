@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bagmati Restaurant</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
   <header>
@@ -17,86 +17,83 @@
     </div>
     
     <nav>
-        <a href="home.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
         <a href="contact.html">Contact</a>
         <a href="careers.html">Careers</a>
     </nav>
-</header>
-    
-      <div class="container">
-        
-    
-        <form>
-          <div class="form-group">
-            <label for="firstName">First Name</label>
-            <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
-          </div>
-    
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email address">
-          </div>
-    
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
-          </div>
-    
-          <button type="submit">Send Feedback</button>
-        </form>
+  </header>
+
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
       </div>
-    
-      <footer>
-        
-        <div class="footer">
-          <div class="footer-col">
-              <h3>About Us</h3>
-              <p>Bagmati Restaurant is a Nepali restaurant that prepares and serves food and drinks to customers.</p>
-          </div>
-  
-          <div class="footer-col">
-              <h3>Opening Hours</h3>
-              <p>Monday-Saturday: 10:00am to 10:00pm</p>
-              <p>Sunday: 10:00am to 12:00pm</p>
-          </div>
-  
-          <div class="footer-col">
-              <h3>Contact Us</h3>
-              <div class="contact-info">
-                  <div class="contact-item">
-                      <img src="image/Gmail.png" alt="Email Icon">
-                      <p>Email: info@bagmati.com.np</p>
-                  </div>
-                  <div class="contact-item">
-                      <img src="image/world-wide-signal.png" alt="Website Icon">
-                      <p>Website: www.bagmatirestro.com.np</p>
-                  </div>
-                  <div class="contact-item">
-                      <img src="image/viber.png" alt="Phone Icon">
-                      <p>Phone: 01-64165136, 087125312</p>
-                  </div>
-                  <div class="contact-item">
-                      <img src="image/location.png" alt="Address Icon">
-                      <p>Address: Gaidakot, Nawalpur, Nepal</p>
-                  </div>
-              </div>
-          </div>
-          
-          
-  
-          <div class="footer-col">
-              <h3>Get In Touch</h3>
-              
-  
-  
-      <div class="social-icons-container">
-          <a href="#" target="_blank" title="YouTube"><img src="image/youtube_social_circle_red.png" alt="YouTube Icon"></a>
-          <a href="#" target="_blank" title="Facebook"><img src="image/Facebook_Logo_Primary.png" alt="Facebook Icon"></a>
-          <a href="#" target="_blank" title="WhatsApp"><img src="image/Digital_Glyph_Green.png" alt="WhatsApp Icon"></a>
-          <a href="#" target="_blank" title="Instagram"><img src="image/Instagram_Glyph_Gradient.png" alt="Instagram Icon"></a>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email address">
       </div>
-   </div>
-   </footer>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+      </div>
+
+      <button type="submit">Send Feedback</button>
+    </form>
+
+    <!-- Add the map container -->
+    <div id="map" style="height: 400px; margin-top: 20px;"></div>
+  </div>
+
+  <!-- Existing Footer -->
+  <footer>
+    <div class="footer">
+      <div class="footer-col">
+        <h3>About Us</h3>
+        <p>Bagmati Restaurant is a Nepali restaurant that prepares and serves food and drinks to customers.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Opening Hours</h3>
+        <p>Monday-Saturday: 10:00am to 10:00pm</p>
+        <p>Sunday: 10:00am to 12:00pm</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <!-- Your existing contact information -->
+      </div>
+
+      <div class="footer-col">
+        <h3>Get In Touch</h3>
+        <div class="social-icons-container">
+          <a href="#" target="_blank" title="YouTube"><img src="image/youtube_icon.png" alt="YouTube Icon"></a>
+          <a href="#" target="_blank" title="Facebook"><img src="image/facebook_icon.png" alt="Facebook Icon"></a>
+          <a href="#" target="_blank" title="WhatsApp"><img src="image/whatsapp_icon.png" alt="WhatsApp Icon"></a>
+          <a href="#" target="_blank" title="Instagram"><img src="image/instagram_icon.png" alt="Instagram Icon"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Add the Google Maps API script here -->
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+  <script>
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 60.1695, lng: 24.9354}, // Coordinates for Helsinki, Finland
+        zoom: 15 // Adjust the zoom level as needed
+      });
+
+      var marker = new google.maps.Marker({
+        position: {lat: 60.1695, lng: 24.9354},
+        map: map,
+        title: 'Bagmati Restaurant, Helsinki'
+      });
+    }
+  </script>
 </body>
 </html>
