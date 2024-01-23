@@ -1,6 +1,11 @@
 body {
+<<<<<<< HEAD
     background-color:  white;
     
+=======
+    background-color: #fff;
+    font-family: sans-serif;
+>>>>>>> a0a4d83ea31206f79c7ac50cd03242cb11c9b2df
   }
 
   header {
@@ -12,15 +17,24 @@ body {
 
   .container {
     margin: 0 auto;
+<<<<<<< HEAD
     width: 80%;
     padding: 20px;
     border: 1px solid #ccc;
+=======
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #ccc;
+>>>>>>> a0a4d83ea31206f79c7ac50cd03242cb11c9b2df
   }
 
   h1 {
     text-align: center;
     margin-bottom: 20px;
+<<<<<<< HEAD
   
+=======
+>>>>>>> a0a4d83ea31206f79c7ac50cd03242cb11c9b2df
   }
 
   .form-group {
@@ -35,7 +49,11 @@ body {
   input, textarea {
     width: 100%;
     padding: 5px;
+<<<<<<< HEAD
     border: 1px solid #ccc;
+=======
+    border: 2px solid #ccc;
+>>>>>>> a0a4d83ea31206f79c7ac50cd03242cb11c9b2df
   }
 
   button {
