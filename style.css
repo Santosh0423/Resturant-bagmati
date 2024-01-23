@@ -162,16 +162,22 @@ section {
 #slideshow {
     max-width: 60%; /* Adjust the max-width of the slideshow */
     margin-top: 100px;
+    text-align: center;
 }
 
-.slide img {
-    width: 100%; /* Make the images within the slideshow take 100% of the container width */
+#slideshow .slide img {
+    width: 50%; /* Make the images within the slideshow take 100% of the container width */
     height: auto; /* Maintain the aspect ratio of the images */
 }
 
-.single-photo img {
-    width: 30%; /* Adjust the width of the single photo as needed */
+#slideshow .single-photo img {
+    width: 50%; /* Adjust the width of the single photo as needed */
     height: auto;
+}
+#slideshow .slide, #slideshow .single-photo{
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
 }
 .text-between{
     margin-top: 60px;

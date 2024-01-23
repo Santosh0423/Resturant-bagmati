@@ -9,9 +9,9 @@ header {
     background-color: white;
     color: red;
     padding: 1em;
-    text-align: left; /* Set text alignment to the left */
+    text-align: left; 
     display: flex;
-    align-items: center; /* Center items vertically in the header */
+    align-items: center; 
     justify-content: space-between;
 }
 .logo-container {
@@ -20,16 +20,16 @@ header {
 }
 
 header img {
-    margin-right: 20px; /* Adjusted the margin between the logo and the restaurant name */
+    margin-right: 20px; 
 }
 
 h1 {
-    margin: 0; /* Remove the default margin for the h1 element */
+    margin: 0; 
     margin-left: 10px;
 }
 p {
-    margin: 0; /* Remove default margin for h1 and p elements */
-    margin-left: 10px; /* Add a margin to separate the logo and the restaurant name */
+    margin: 0; 
+    margin-left: 10px; 
     font-size: small;
 }
 
@@ -59,7 +59,7 @@ section {
     background-size: cover;
     background-position: center;
     color: white;
-    position: relative; /* Needed for absolute positioning of overlay */
+    position: relative; 
 }
 
 .footer::before {
@@ -69,7 +69,7 @@ section {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
 .footer-col {
@@ -89,13 +89,13 @@ section {
 .contact-item {
     display: flex;
     align-items: center;
-    margin-bottom: 10px; /* Add spacing between each contact item */
+    margin-bottom: 10px; 
 }
 
 .contact-item img {
-    width: 20px; /* Adjust the width of the logos as needed */
+    width: 20px; 
     height: 20px;
-    margin-right: 5px; /* Add spacing between the logo and text */
+    margin-right: 5px; 
 }
 
 
@@ -105,7 +105,7 @@ section {
     text-align: center;
     margin-top: 20px;
 }
-/* Add this to your existing CSS */
+
 
 .footer-col.social-icons {
     text-align: center;
@@ -121,7 +121,7 @@ section {
 }
 
 .social-icons-container img {
-    width: 30px; /* Adjust the size of the icons as needed */
+    width: 30px; 
     height: 30px;
 }
 .main-menu{
@@ -130,4 +130,12 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
+}
+img{
+    width: 70px;
+    height: 70px;
+}
+ h2, h3{
+font-family: Arial, Helvetica, sans-serif;
+color: red;
 }
