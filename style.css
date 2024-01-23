@@ -27,11 +27,10 @@ h1 {
     margin: 0; /* Remove the default margin for the h1 element */
     margin-left: 10px;
 }
-h1,
 p {
     margin: 0; /* Remove default margin for h1 and p elements */
     margin-left: 10px; /* Add a margin to separate the logo and the restaurant name */
-  
+    font-size: small;
 }
 
 nav {
