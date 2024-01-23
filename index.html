@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bagmati Restaurant</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
+
     <header>
         <div class="logo-container">
-            <img src="image/logo1.png" alt="Restaurant Logo" width="50" height="50">
+            <a href="index.html">
+                <img src="image/BR.png" alt="Restaurant Logo" width="50" height="50">
+            </a>
             <div class="restaurant-info">
                 <h1>Bagmati Restaurant</h1>
-                <p>Breakfast and lunch served every day</p>
+                <p class="smaller-text">Breakfast and lunch served every day</p>
+
             </div>
         </div>
         
+        
+
         <nav>
-            <a href="home.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
             <a href="contact.html">Contact</a>
             <a href="careers.html">Careers</a>
@@ -27,59 +32,27 @@
     </header>
 
     <section id="home">
-        <h2>Welcome to Our Restaurant</h2>
-       
-        <p>"Bagmati Restaurant - Embark on a culinary journey showcasing the rich tapestry of Nepali flavors. Indulge in a symphony of traditional dishes crafted with care and authenticity. From savory momos to flavorful thakali sets, our menu is a celebration of Nepal's gastronomic heritage. Join us daily for breakfast and lunch, and savor the essence of Nepal in every bite."</p>
-    
+        <h2>Welcome to Bagmati Restaurant</h2>
+        <p>Where the flavour of Nepal come to life in every bite. Immerse yourself in a culinary journey that seamlessly blends the rich heritage of Nepali cuisine with a touch of warmth and sweetness. We bring the true taste of Nepal to your table. From MO:MO delicacies that melts in your mouth to aromatic dal bhat. </p>
+
         <div class="image-container">
             <img src="image/thakaliset.jpg" alt="Image 1">
             <img src="image/momo.jpg" alt="Image 2">
             <img src="image/chowmin.jpg" alt="Image 3">
+            <img src="image/photo1slideshow.jpg" alt="Image 4">
         </div>
-          
-          <div class="text-between">
-            <p>Explore our delicious offerings!</p>
+
+        <div class="text-between">
+            <h3>Explore our delicious offerings!</h3>
+            <p> Our menu is celebration of Nepal's diverse culinary traditions. Each dish is prepared with care, Using traditional recipes passed down through the generations. We not only serve food but also we serve an experience. Our friendly and attentive staff are committed to providing you with geniune Nepali hospitality. Feel the warmth of our culture as you dine in a cozy atmosphere that reflects the heart of Nepal. Join us for a relastic dining experience that goes beyond the ordinary.Discover the best and sweet aspects of Nepali cuisine, where each dish tells a story and each moment is a celebration of flavors. We look forward to Welcoming you to ataste of Nepal's heart and soul.</p>
         </div>
-    
-        <div id="slideshow">
-            <div class="slide">
-                <img src="image/photo1slideshow.jpg" alt="New Dish 1">
-            </div>
-            <div class="slide">
-                <img src="image/photo2slideshow.jpg" alt="New Dish 2">
-            </div>
-            <div class="slide">
-                <img src="image/photo3slideshow.jpg" alt="New Dish 3">
-            </div>
-            
-        <div class="single-photo">
-            <img src="image/FooterImage.jpg" alt="Your Right Side Photo">
+
+        <div class="image-container">
+            <img src="image/photo3slideshow.jpg" alt="Image 5">
+            <img src="image/photo2slideshow.jpg" alt="Image 6">
+            <img src="image/FooterImage.jpg" alt="Image 7">
         </div>
-        </div>
-        
-        <script>
-            let slideIndex = 0;
-        
-            function showSlides() {
-                let slides = document.querySelectorAll('.slide');
-                for (let i = 0; i < slides.length; i++) {
-                    slides[i].style.display = 'none';
-                }
-        
-                slideIndex++;
-        
-                if (slideIndex > slides.length) {
-                    slideIndex = 1;
-                }
-        
-                slides[slideIndex - 1].style.display = 'block';
-                setTimeout(showSlides, 5000);
-            }
-        
-            showSlides();
-        </script>
-        
-    
+    </section>
 
     <div class="footer">
         <div class="footer-col">
@@ -114,26 +87,17 @@
                 </div>
             </div>
         </div>
-        
-        
 
-        <div class="footer-col">
+        <div class="footer-col social-icons">
             <h3>Get In Touch</h3>
-            
-
-
-    <div class="social-icons-container">
-        <a href="#" target="_blank" title="YouTube"><img src="image/youtube_social_circle_red.png" alt="YouTube Icon"></a>
-        <a href="#" target="_blank" title="Facebook"><img src="image/Facebook_Logo_Primary.png" alt="Facebook Icon"></a>
-        <a href="#" target="_blank" title="WhatsApp"><img src="image/Digital_Glyph_Green.png" alt="WhatsApp Icon"></a>
-        <a href="#" target="_blank" title="Instagram"><img src="image/Instagram_Glyph_Gradient.png" alt="Instagram Icon"></a>
-    </div>
-</div>
-
-            
+            <div class="social-icons-container">
+                <a href="#" target="_blank" title="YouTube"><img src="image/youtube_social_circle_red.png" alt="YouTube Icon"></a>
+                <a href="#" target="_blank" title="Facebook"><img src="image/Facebook_Logo_Primary.png" alt="Facebook Icon"></a>
+                <a href="#" target="_blank" title="WhatsApp"><img src="image/Digital_Glyph_Green.png" alt="WhatsApp Icon"></a>
+                <a href="#" target="_blank" title="Instagram"><img src="image/Instagram_Glyph_Gradient.png" alt="Instagram Icon"></a>
+            </div>
         </div>
     </div>
 
-    
 </body>
 </html>
